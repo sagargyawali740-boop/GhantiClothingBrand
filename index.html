@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GhantiClothingBrand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Mogra&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- NAV -->
+  <nav id="mainNav">
+    <a href="#home" class="nav-logo">
+      <span class="anim-nav-logo" id="navLogo">GCB</span>
+    </a>
+    <div class="nav-right">
+      <a href="#shop" class="nav-link">Shop</a>
+      <a href="#about" class="nav-link">About</a>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+      </button>
+
+      <button class="cart-btn" id="cartToggle">
+        Bag <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <br>
+        <div class="anim-line"><span>Wear</span></div>
+        <div class="anim-line"><span>the <span class="hero-accent-word">Ghanti</span></span></div>
+        <div class="anim-line"><span>Loud.</span></div>
+      </h1>
+      <p class="anim-herosub hero-sub">Raw threads for raw people. No hype, no filter — just fabric that hits different.</p>
+      <div class="anim-heroact hero-actions">
+        <a href="#shop" class="btn-primary">Shop Now</a>
+        <a href="#about" class="btn-ghost">Our Story <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="anim-heroimg hero-img-wrap">
+        <div class="hero-img-placeholder">
+          <span class="ph-icon">🧥</span>
+          <p>Product Image</p>
+        </div>
+        <span class="anim-herotag hero-tag">New Drop</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span class="marquee-item">GhantiClothingBrand</span>
+      <span class="marquee-item">Wear It Raw</span>
+      <span class="marquee-item">SS 2026</span>
+      <span class="marquee-item">No Filter</span>
+      <span class="marquee-item">Street First</span>
+      <span class="marquee-item">GhantiClothingBrand</span>
+      <span class="marquee-item">Wear It Raw</span>
+      <span class="marquee-item">SS 2026</span>
+      <span class="marquee-item">No Filter</span>
+      <span class="marquee-item">Street First</span>
+      <span class="marquee-item">GhantiClothingBrand</span>
+      <span class="marquee-item">Wear It Raw</span>
+      <span class="marquee-item">SS 2026</span>
+      <span class="marquee-item">No Filter</span>
+      <span class="marquee-item">Street First</span>
+      <span class="marquee-item">GhantiClothingBrand</span>
+      <span class="marquee-item">Wear It Raw</span>
+      <span class="marquee-item">SS 2026</span>
+      <span class="marquee-item">No Filter</span>
+      <span class="marquee-item">Street First</span>
+    </div>
+  </div>
+
+  <!-- SHOP -->
+  <section class="shop" id="shop">
+    <div class="section-header">
+      <h2 class="section-title">The Drop</h2>
+      <span class="section-sub">8 Pieces — SS 2026</span>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-visual">
+      <div class="about-tagline">Ghanti<br/>hits<br/><em>hard.</em></div>
+    </div>
+    <div class="about-content">
+      <span class="about-label">The Brand</span>
+      <h2 class="about-title">Built on the streets,<br/><em>not in a parliament.</em></h2>
+      <p class="about-body">GhantiClothingBrand started in a small room with too many ideas and not enough money. We make clothes for people who move fast, think loud, and don't need a brand to tell them who they are.<br/><br/>Every piece is cut with intention. Every drop is limited. No restocks, no excuses.</p>
+      <div class="about-stats">
+        <div><div class="stat-num">20+</div><div class="stat-label">Years running</div></div>
+        <div><div class="stat-num">5k+</div><div class="stat-label">Drops done</div></div>
+        <div><div class="stat-num">0</div><div class="stat-label">Fucks given</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Ghanti<em>.</em></div>
+    <span class="footer-copy">GhantiClothingBrand © 2026</span>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Size Guide</a>
+      <a href="#">Returns</a>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <span class="cart-title">Your Bag</span>
+      <button class="cart-close" id="cartClose">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span class="subtotal-label">Subtotal</span>
+        <span class="subtotal-val" id="subtotalVal">Rs0</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- CHECKOUT MODAL -->
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">×</button>
+
+      <!-- Progress Bar -->
+      <div class="modal-progress">
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+        <div class="progress-step"></div>
+      </div>
+
+      <!-- STEP 1: Contact & Shipping -->
+      <div class="modal-step active" id="step1">
+        <span class="modal-label">Step 1 of 3</span>
+        <div class="modal-title">Where to?</div>
+        <div class="field-group">
+          <label>Full Name *</label>
+          <input type="text" id="f-name" placeholder="e.g. Sagar Gyawali"/>
+        </div>
+        <div class="field-group">
+          <label>Email *</label>
+          <input type="email" id="f-email" placeholder="you@example.com"/>
+        </div>
+        <div class="field-group">
+          <label>Delivery Address *</label>
+          <input type="text" id="f-address" placeholder="Street, City, State"/>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Pincode</label>
+            <input type="text" id="f-pin" placeholder="32900"/>
+          </div>
+          <div class="field-group">
+            <label>Phone</label>
+            <input type="text" id="f-phone" placeholder="+977 98xx xxxxxx"/>
+          </div>
+        </div>
+        <button class="modal-btn" id="toStep2">Continue to Payment →</button>
+      </div>
+
+      <!-- STEP 2: Order Review -->
+      <div class="modal-step" id="step2">
+        <span class="modal-label">Step 2 of 3</span>
+        <div class="modal-title">Your Order</div>
+        <div class="modal-order-summary" id="orderSummary"></div>
+        <button class="modal-btn" id="toStep3">Continue to Payment →</button>
+        <button class="modal-btn secondary" onclick="showStep(1); setProgress(1);">← Edit Details</button>
+      </div>
+
+      <!-- STEP 3: Payment -->
+      <div class="modal-step" id="step3">
+        <span class="modal-label">Step 3 of 3</span>
+        <div class="modal-title">Pay up.</div>
+        <div class="field-group">
+          <label>Card Number</label>
+          <input type="text" id="f-card" placeholder="4242 4242 4242 4242" maxlength="19"
+            oninput="this.value=this.value.replace(/[^0-9]/g,'').replace(/(.{4})/g,'$1 ').trim()"/>
+        </div>
+        <div class="field-row">
+          <div class="field-group">
+            <label>Expiry</label>
+            <input type="text" id="f-expiry" placeholder="MM / YY" maxlength="7"/>
+          </div>
+          <div class="field-group">
+            <label>CVV</label>
+            <input type="text" id="f-cvv" placeholder="•••" maxlength="3"/>
+          </div>
+        </div>
+        <div class="field-group">
+          <label>Name on Card</label>
+          <input type="text" id="f-cardname" placeholder="As on card"/>
+        </div>
+        <button class="modal-btn" id="placeOrder">Place Order</button>
+        <button class="modal-btn secondary" onclick="showStep(2); setProgress(2);">← Back</button>
+      </div>
+
+      <!-- STEP 4: Success -->
+      <div class="modal-step" id="step4">
+        <div class="success-icon">✓</div>
+        <div class="success-title">Order Placed!</div>
+        <p class="success-sub">Your threads are on the way. Expect it in 3–5 working days — or whenever we feel like it.</p>
+        <div class="order-id">Order ID: <strong id="orderId">GCB-XXXXXX</strong></div>
+        <button class="modal-btn" id="doneShopping">Keep Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
