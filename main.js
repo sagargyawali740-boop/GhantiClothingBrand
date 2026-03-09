@@ -19,14 +19,14 @@ window.addEventListener('scroll', () => {
 
 // ── PRODUCTS ──
 const products = [
-  { id:1, name:"Ghanti Tee",     desc:"heavyweight cotton",  price:899,  badge:"New",  icon:"👕" },
-  { id:2, name:"Raw Cut Hoodie", desc:"brushed fleece",      price:1799, badge:null,   icon:"🧥" },
-  { id:3, name:"Street Cargo",   desc:"rip-stop canvas",     price:2299, badge:"New",  icon:"👖" },
-  { id:4, name:"Acid Wash LS",   desc:"100% cotton overdye", price:1299, badge:null,   icon:"👔" },
-  { id:5, name:"Void Bomber",    desc:"satin shell",         price:3499, badge:"Last", icon:"🧣" },
-  { id:6, name:"Ghanti Cap",     desc:"6-panel structured",  price:699,  badge:null,   icon:"🧢" },
-  { id:7, name:"No Filter Tee",  desc:"ringspun cotton",     price:799,  badge:null,   icon:"👕" },
-  { id:8, name:"Wreck Shorts",   desc:"cotton twill",        price:1099, badge:"Last", icon:"🩳" },
+  { id:1, name:"Flamin SweatShirt",     desc:"heavyweight cotton",  price:899,  badge:"New",  icon:"👕", img:"./image/1.png" },
+  { id:2, name:"Raw Cut Hoodie", desc:"brushed fleece",      price:1799, badge:null,   icon:"🧥", img:"./image/2.png" },
+  { id:3, name:"Street Cargo",   desc:"rip-stop canvas",     price:2299, badge:"New",  icon:"👖", img:"./image/3.png" },
+  { id:4, name:"Acid Wash LS",   desc:"ghan-tee", price:1299, badge:null,   icon:"👔", img:"./image/4.png" },
+  { id:5, name:"Void Bomber",    desc:"satin shell",         price:3499, badge:"Last", icon:"🧣", img:"./image/5.png" },
+  { id:6, name:"ye Cap",     desc:"6-panel structured",  price:699,  badge:null,   icon:"🧢", img:"./image/6.png" },
+  { id:7, name:"No Filter Tee",  desc:"ringspun cotton",     price:799,  badge:null,   icon:"👕", img:"./image/7.png" },
+  { id:8, name:"Wreck Shorts",   desc:"cotton twill",        price:1099, badge:"Last", icon:"🩳", img:"./image/8.png" },
 ];
 
 const grid = document.getElementById('productGrid');
@@ -34,7 +34,7 @@ products.forEach(p => {
   grid.innerHTML += `
     <div class="product-card">
       <div class="product-img">
-        <div class="product-img-inner"><span class="pi">${p.icon}</span><span>Product Image</span></div>
+        ${p.img ? `<img src="${p.img}" alt="${p.name}" style="width: 100%; height: 100%; object-fit: cover;">` : `<div class="product-img-inner"><span class="pi">${p.icon}</span><span>Product Image</span></div>`}
         ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
       </div>
       <div class="product-info">
