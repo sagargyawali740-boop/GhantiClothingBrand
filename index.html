@@ -124,9 +124,9 @@
     <div class="footer-logo">Ghanti<em>.</em></div>
     <span class="footer-copy">GhantiClothingBrand © 2026</span>
     <div class="footer-links">
-      <a href="#">Instagram</a>
-      <a href="#">Size Guide</a>
-      <a href="#">Returns</a>
+      <a href="https://www.instagram.com/ghanticlothing_store" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/share/1CNHsm7jun/?mibextid=wwXIfr" target="_blank">Facebook</a>
+      <a href="#" id="sizeGuideLink">Size Guide</a>
     </div>
   </footer>
 
@@ -232,6 +232,95 @@
         <p class="success-sub">Your threads are on the way. Expect it in 3–5 working days — or whenever we feel like it.</p>
         <div class="order-id">Order ID: <strong id="orderId">GCB-XXXXXX</strong></div>
         <button class="modal-btn" id="doneShopping">Keep Shopping</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SIZE GUIDE MODAL -->
+  <div class="size-guide-modal" id="sizeGuideModal">
+    <div class="modal-backdrop" id="sizeGuideBackdrop"></div>
+    <div class="sg-box">
+      <button class="modal-close" id="sizeGuideClose">×</button>
+
+      <div class="sg-header">
+        <span class="sg-eyebrow">Ghanti Guide</span>
+        <h2 class="sg-title">Know Your Fit.</h2>
+        <p class="sg-sub">All measurements in inches. When in doubt — size up.</p>
+      </div>
+
+      <!-- TABS -->
+      <div class="sg-tabs">
+        <button class="sg-tab active" data-tab="shirts">Shirts & Tops</button>
+        <button class="sg-tab" data-tab="pants">Pants & Bottoms</button>
+      </div>
+
+      <!-- SHIRTS TABLE -->
+      <div class="sg-panel active" id="sg-shirts">
+        <div class="sg-measure-hint">
+          <div class="sg-hint-item"><span class="sg-hint-dot accent"></span><strong>Chest</strong> — fullest part, tape under arms</div>
+          <div class="sg-hint-item"><span class="sg-hint-dot sage"></span><strong>Waist</strong> — 1 inch above navel</div>
+          <div class="sg-hint-item"><span class="sg-hint-dot mid"></span><strong>Shoulder</strong> — seam to seam across back</div>
+        </div>
+        <div class="sg-table-wrap">
+          <table class="sg-table">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Chest</th>
+                <th>Waist</th>
+                <th>Shoulder</th>
+                <th>Length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="sg-size-tag" style="--c:#4A6741">XS</span></td><td>32 – 34</td><td>26 – 28</td><td>15.5</td><td>27</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#4A7BA6">S</span></td><td>35 – 37</td><td>29 – 31</td><td>16.5</td><td>28</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#B8973A">M</span></td><td>38 – 40</td><td>32 – 34</td><td>17.5</td><td>29</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--accent)">L</span></td><td>41 – 43</td><td>35 – 37</td><td>18.5</td><td>30</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#7A5CA6">XL</span></td><td>44 – 46</td><td>38 – 40</td><td>19.5</td><td>31</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--ink)">2XL</span></td><td>47 – 49</td><td>41 – 43</td><td>20.5</td><td>32</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--ink)">3XL</span></td><td>50 – 52</td><td>44 – 46</td><td>21.5</td><td>33</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- PANTS TABLE -->
+      <div class="sg-panel" id="sg-pants">
+        <div class="sg-measure-hint">
+          <div class="sg-hint-item"><span class="sg-hint-dot accent"></span><strong>Waist</strong> — where you wear your pants, 1 finger of ease</div>
+          <div class="sg-hint-item"><span class="sg-hint-dot sage"></span><strong>Hip</strong> — fullest part, 7–9 in. below waist</div>
+          <div class="sg-hint-item"><span class="sg-hint-dot mid"></span><strong>Inseam</strong> — S ≤5'8" · R 5'9"–6'0" · L ≥6'1"</div>
+        </div>
+        <div class="sg-table-wrap">
+          <table class="sg-table">
+            <thead>
+              <tr>
+                <th>US Size</th>
+                <th>Waist</th>
+                <th>Hip</th>
+                <th>Inseam S</th>
+                <th>Inseam R</th>
+                <th>Inseam L</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="sg-size-tag" style="--c:#4A7BA6">28</span></td><td>28 – 29</td><td>36 – 37</td><td>28</td><td>30</td><td>32</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#4A6741">30</span></td><td>30 – 31</td><td>38 – 39</td><td>28</td><td>30</td><td>32</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#B8973A">32</span></td><td>32 – 33</td><td>40 – 41</td><td>29</td><td>31</td><td>33</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--accent)">34</span></td><td>34 – 35</td><td>42 – 43</td><td>29</td><td>31</td><td>33</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:#7A5CA6">36</span></td><td>36 – 37</td><td>44 – 45</td><td>30</td><td>32</td><td>34</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--ink)">38</span></td><td>38 – 39</td><td>46 – 47</td><td>30</td><td>32</td><td>34</td></tr>
+              <tr><td><span class="sg-size-tag" style="--c:var(--ink)">40</span></td><td>40 – 42</td><td>48 – 50</td><td>30</td><td>32</td><td>34</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="sg-footer-note">
+        <span class="sg-accent-line"></span>
+        No refunds on wrong sizes. Measure twice, order once.
+        <span class="sg-accent-line"></span>
       </div>
     </div>
   </div>

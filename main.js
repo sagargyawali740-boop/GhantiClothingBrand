@@ -251,6 +251,34 @@ gsap.from('.about-content > *', {
   y: 32, opacity: 0, duration: .65, stagger: .1, ease: 'power3.out'
 });
 
+// ── SIZE GUIDE MODAL ──
+const sizeGuideModal   = document.getElementById('sizeGuideModal');
+const sizeGuideBackdrop = document.getElementById('sizeGuideBackdrop');
+
+function openSizeGuide(e) {
+  e.preventDefault();
+  sizeGuideModal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeSizeGuide() {
+  sizeGuideModal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+document.getElementById('sizeGuideLink').addEventListener('click', openSizeGuide);
+document.getElementById('sizeGuideClose').addEventListener('click', closeSizeGuide);
+sizeGuideBackdrop.addEventListener('click', closeSizeGuide);
+
+// Tab switching
+document.querySelectorAll('.sg-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.sg-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.sg-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('sg-' + tab.dataset.tab).classList.add('active');
+  });
+});
+
 // ── SMOOTH SCROLL ──
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
