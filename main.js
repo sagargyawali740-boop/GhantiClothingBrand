@@ -1,7 +1,3 @@
-// ── VERCEL ANALYTICS ──
-import { inject } from '@vercel/analytics';
-inject();
-
 gsap.registerPlugin(ScrollTrigger);
 
 // ── THEME TOGGLE ──
